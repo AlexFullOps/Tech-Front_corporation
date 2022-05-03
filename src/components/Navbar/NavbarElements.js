@@ -35,16 +35,11 @@ export const NavbarContainer = styled.div`
 
 export const NavLogo = styled(LinkR)`
 
-    color: #3bcfed;
-    text-shadow: 3px 3px #000;
-    justify-self: flex-start;
-    cursor: pointer;
-    font-size: 1.5rem;
+    width: 80px;
+    height: 80px;
     display: flex;
-    align-items: center;
-    margin-left: 24px;
-    font-weight: bold;
-    text-decoration: none;
+    margin-left: -20px;
+    
 
 `
 export const MobileIcon = styled.div`

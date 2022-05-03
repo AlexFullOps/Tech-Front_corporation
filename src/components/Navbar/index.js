@@ -12,7 +12,7 @@ import {
     from './NavbarElements'
 import {FaBars} from 'react-icons/fa'
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
     <>
     <Nav>
@@ -21,7 +21,7 @@ const Navbar = () => {
                 <img id='lg-menu' src='./favicon.gif' alt='Logo Tech Front'></img>
                 
             </NavLogo>
-            <MobileIcon>
+            <MobileIcon onClick={toggle}>
                 <FaBars />
             </MobileIcon>
             <NavMenu>
