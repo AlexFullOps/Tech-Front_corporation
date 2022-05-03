@@ -3,6 +3,8 @@ import { Link as LinkR} from 'react-router-dom'
 import { Link as LinkS } from 'react-scroll'
 
 
+
+
 export const Nav = styled.nav`
     background: #001462;
     height: 80px;
@@ -79,7 +81,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-    color: #fff;
+    color: #3bcfed;
     display: flex;
     align-items: center;
     text-align: none;
@@ -87,6 +89,10 @@ export const NavLinks = styled(LinkS)`
     height: 100%;
     cursor: pointer;
 
+
+    &:hover{
+        color: #fff;
+    }
     &.active{
         border-bottom: 30px solid #3bcfed;
     }
@@ -98,7 +104,7 @@ export const NavBtn = styled.nav`
     display: flex;
     align-items: center;
 
-    @media acreen and (max-width: 768px){
+    @media acreen and (min-width: 768px){
         display: none;
     }
 
@@ -124,5 +130,50 @@ export const NavBtnLink = styled(LinkR)`
     }
 
 `
+
+export const SidebarWrapper = styled.div`
+    color: #fff;
+`
+export const SidebarLink = styled(LinkS)`
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    text-decoration: none;
+    list-style: none;
+    transition: 0.2s ease-in-out;
+    text-decoration: none;
+    color: #3bcfed;
+    cursor: pointer;
+
+    &:hover{
+        color: #fff;
+        transition: 0.2s ease-in-out;
+    }
+`
+export const SideBtnWrap = styled.div`
+    display: flex;
+    justify-content: center;
+`
+export const SidebarRoute = styled(LinkR)`
+    border-radius: 50px;
+    background: #01bf;
+    white-space: nowrap;
+    padding: 16px 64px;
+    color: #fff;
+    font-size: 16px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s all ease-in-out;
+    text-decoration: none;
+
+    &:hover{
+        transition: 0.2s all ease-in-out;
+        background: #fff;
+        color: #3bcfed;
+    }
+`
+
 
 

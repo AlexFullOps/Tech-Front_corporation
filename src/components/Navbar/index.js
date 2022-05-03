@@ -6,9 +6,8 @@ import {
     MobileIcon, 
     NavMenu, 
     NavItem, 
-    NavLinks, 
-    NavBtn,
-    NavBtnLink
+    NavLinks 
+
 } 
     from './NavbarElements'
 import {FaBars} from 'react-icons/fa'
@@ -19,7 +18,8 @@ const Navbar = () => {
     <Nav>
         <NavbarContainer>
             <NavLogo to="/">
-                Tech Front
+                <img id='lg-menu' src='./favicon.gif' alt='Logo Tech Front'></img>
+                
             </NavLogo>
             <MobileIcon>
                 <FaBars />
@@ -38,9 +38,7 @@ const Navbar = () => {
                     <NavLinks to="signup">Contatos</NavLinks>
                 </NavItem>
             </NavMenu>
-            <NavBtn>
-                <NavBtnLink to="/signin">Seguir</NavBtnLink>
-            </NavBtn>
+            
         </NavbarContainer>
     </Nav>
     </>
